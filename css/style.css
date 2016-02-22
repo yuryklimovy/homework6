@@ -5,9 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
-body {}
+body, html{
+  height: 100%;
+}
 .wrapper {
   width: 910px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -227,7 +230,7 @@ nav {
   padding: 3px 7px 0px 0px;
 }
 select {
-  width: 117px;
+  width: 118px;
   height: 18px;
   border: none;
   background: transparent;
@@ -237,7 +240,7 @@ select:focus {
 }
 .styled-select {
   overflow: hidden;
-  width: 104px;
+  width: 102px;
   margin: 0px 0px 4px 0px;
   background: url(../img/select-big-bg.png) no-repeat left;
 }
@@ -415,7 +418,7 @@ select:focus {
 .checkbox:checked+label {
   background: url(../img/checkbox-cheked.png) no-repeat left;
 }
-.right-catalog [type="submit"]{
+.right-catalog [type="submit"] {
   width: 80px;
   height: 24px;
   margin: 12px 25px;
@@ -424,7 +427,60 @@ select:focus {
   color: #e5e9ea;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(to bottom, rgb(31,103,135) 0%,rgb(12,51,87) 100%,rgb(125,185,232) 100%);
-  box-shadow: 3px 3px 3px 0px rgba(190,192,193,1);
+  background: linear-gradient(to bottom, rgb(31, 103, 135) 0%, rgb(12, 51, 87) 100%, rgb(125, 185, 232) 100%);
+  box-shadow: 3px 3px 3px 0px rgba(190, 192, 193, 1);
+}
+.brandlogo{
+  text-align: center;
+  margin-top: 38px;
+}
+/*FOOTER*/
+footer{
+  height: 99px;
+  margin-top: 21px;
+  background: #213a4d;
+}
+.footer-menu{
+  position: relative;
+  overflow: hidden;
+  padding-top: 14px;
+}
+.footer-menu ul{
+  position: relative;
+  overflow: hidden;
 
+}
+
+.footer-menu li{
+  float: left;
+  position: relative;
+  display: block;
+  left: 303px;
+}
+.footer-menu li:first-child a{
+  border-left: none;
+}
+.footer-menu li:last-child a{
+  border-right: none;
+}
+.footer-menu a{
+  display: block;
+  padding: 0px 12px;
+  text-decoration: none;
+  color: #bec6c9;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 11px;
+  border-right: 1px solid #bec6c9;
+  border-left: 1px solid #8d989f;
+}
+.footer-menu a:hover{
+  color: #52abcb;
+}
+.copyright{
+  margin-top: 16px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #7f4740;
 }
